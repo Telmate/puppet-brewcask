@@ -1,9 +1,9 @@
 class brewcask {
   require homebrew
 
-  homebrew::tap { 'phinze/homebrew-cask': }
+  homebrew::tap { 'Telmate/homebrew-cask': }
    
   package { 'brew-cask':
-    require => Homebrew::Tap['phinze/homebrew-cask']
+    require => Homebrew::Tap['Telmate/homebrew-cask']
   }
 }
